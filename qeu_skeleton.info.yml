@@ -1,0 +1,19 @@
+name: Qwirl Skeleton
+description: Skeleton is a powerful, clean, responsive theme. This is a customization for qwirl.eu.
+type: theme
+core: 8.x
+libraries:
+  - qeu_skeleton/global-css
+stylesheets-remove:
+  - core/assets/vendor/normalize-css/normalize.css
+  - core/modules/system/css/system.module.css
+  - core/modules/system/css/system.theme.css
+  - core/modules/views/css/views.module.css
+# Define regions
+regions:
+  header: 'Header'
+  content: 'Main content'
+  footer: 'Footer'
+  sidebarleft: 'Left sidebar'
+  sidebarright: 'Right sidebar'
+  topnav: 'Top navigation'

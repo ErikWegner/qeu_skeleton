@@ -1,0 +1,32 @@
+  <div class="container">
+    <div class="row" id="header">
+      {{ page.header }}
+      {% if page.topnav %}
+      <div class="topnav">
+        {{ page.topnav }}
+      </div>
+      {% endif %}
+    </div>
+    <div class="row" id="page">
+      {% if page.sidebarleft %}
+      <div class="three columns sidebar">
+        {{ page.sidebarleft }}
+      </div>
+      {% endif %}
+      {% set maincolumns = (page.sidebarleft and page.sidebarright) ? 'six' : (not page.sidebarleft and not page.sidebarright) ? 'twelve' : 'nine' %}
+      <div class="{{ maincolumns }} columns pagecontent">
+        <h4>{{ title }}</h4>
+        {{ page.content }}
+      </div>
+      {% if page.sidebarright %}
+      <div class="three columns sidebar">
+        {{ page.sidebarright }}
+      </div>
+      {% endif %}
+    </div>
+{% if page.footer %}
+    <div class="row" id="footer">
+      {{ page.footer }}
+    </div>
+{% endif %}
+  </div>
