@@ -1,7 +1,10 @@
 name: Qwirl Skeleton
 description: Skeleton is a powerful, clean, responsive theme. This is a customization for qwirl.eu.
 type: theme
-core: 8.x
+base theme: classy
+core_version_requirement: ^9 || ^10
+dependencies:
+  - classy:classy
 libraries:
   - qeu_skeleton/global-css
 stylesheets-remove:
