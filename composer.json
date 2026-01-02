@@ -1,0 +1,12 @@
+{
+    "name": "erikwegner/qeu_skeleton",
+    "description": "Drupal theme for qwirl.de",
+    "type": "drupal-theme",
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Erik Wegner",
+            "email": "E_Wegner@web.de"
+        }
+    ]
+}
